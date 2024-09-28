@@ -1,0 +1,40 @@
+{
+  "API": {
+    "MODEL": "gpt-4",
+    "MAX_TOKENS": 4000,
+    "RETRY_COUNT": 3,
+    "TIMEOUT": 30,
+    "RATE_LIMIT_PER_MINUTE": 60
+  },
+  "TEMPLATES": {
+    "TEST_CASE_TEMPLATE": "templates/test_case_template.md",
+    "TEST_SUITE_TEMPLATE": "templates/test_suite_template.md"
+  },
+  "PROMPTS": {
+    "EXTRACT_TEST_CASES_FROM_SUITE": "extract_test_cases.md",
+    "DETAILED_TEST_CASE_GENERATION": "detailed_test_case_generation.md",
+    "TEST_SUITE_GENERATION": "test_suite_generation.md"
+  },
+  "PATHS": {
+    "CONTEXT_FOLDER": "src/context",
+    "TEST_SUITE_PATH": "resulting_docs/test_suites",
+    "TEST_CASE_PATH": "resulting_docs/test_cases",
+    "PROJECT_DATA_FOLDER": "resulting_docs/general_qa_docs",
+    "LOG_DIR": "logs",
+    "CONVERSATION_HISTORY_FILE": "conversation_history.json"
+  },
+  "LOGGING": {
+    "LOG_FILE": "suite_case_generation.log",
+    "LOG_LEVEL": "DEBUG",
+    "LOG_DIR": "logs"
+  },
+  "GENERAL": {
+    "SLEEP_TIME": 10
+  },
+  "TEST_CASE_FIELDS": {
+    "TEST_CASE_ID_LABEL": "ID del caso de prueba",
+    "DESCRIPTION_LABEL": "Descripción",
+    "PRIORITY_LABEL": "Prioridad",
+    "STATUS_LABEL": "Estado"
+  }
+}
