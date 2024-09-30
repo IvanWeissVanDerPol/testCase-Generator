@@ -4,6 +4,15 @@
 - `TC_[Module]_[Type]_[Number]`  
 *Example*: `TC_AUTH_SMK_001`
 
+#### **Priority:**
+High/Medium/Low
+
+#### **Type:**
+Functional/Regression/Smoke/Edge Case
+
+#### **Test Environment:**
+iOS/Android/Web
+
 #### **Test Case Title:**
 [Brief title of the test case]  
 *Example*: `Verify successful login with valid credentials`
@@ -16,7 +25,8 @@
 [Conditions that must be met before the test execution]  
 *Example*:  
 1. The user must be registered in the system with valid credentials (email and password).  
-2. The application must be available and functional.
+2. The application must be available and functional.  
+3. Test data must be available.
 
 #### **Test Steps:**
 
@@ -46,12 +56,15 @@
 [Leave blank to be completed after test execution]  
 *Example*: `Pass`
 
+#### **Estimated Execution Time:**
+[Estimate the time needed to execute this test case]  
+*Example*: `5 minutes`
+
 #### **Screenshots/Attachments:**
 [List of screenshots or logs collected during execution]  
 *Example*:  
-1. Screenshot of the login page before entering credentials.  
-2. Screenshot of the dashboard after successful login.
+1. Screenshot of the login page.
 
 #### **Notes/Comments:**
-[Any additional information or observations]  
-*Example*: `No issues observed.`
+[Additional comments or observations related to the test case]  
+*Example*: `If login fails due to network issues, retry the test.`

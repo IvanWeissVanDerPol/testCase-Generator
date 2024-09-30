@@ -1,12 +1,13 @@
 {
     "version": "0.2.0",
     "configurations": [
-        {
-            "name": "Python: src",
-            "type": "python",
-            "request": "launch",
-            "program": "${workspaceFolder}/src/generators/generate_qa_docs.py",
-            "console": "integratedTerminal"
-        }
+      {
+        "name": "Python: src",
+        "type": "python",
+        "request": "launch",
+        "program": "${workspaceFolder}/src/generators/generate_qa_docs.py",
+        "console": "integratedTerminal"
+      }
     ]
-}
+  }
+  

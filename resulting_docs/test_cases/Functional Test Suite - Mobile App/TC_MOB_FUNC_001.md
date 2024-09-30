@@ -3,45 +3,59 @@
 #### **Test Case ID:**
 - `TC_MOB_FUNC_001`
 
+#### **Priority:**
+High
+
+#### **Type:**
+Functional
+
+#### **Test Environment:**
+iOS/Android
+
 #### **Test Case Title:**
 Verify successful registration with valid data
 
 #### **Description:**
-This test case verifies that a user can successfully register into the system with valid data.
+This test case verifies that a user can successfully register on the mobile application with valid data.
 
-#### **Preconditions:**
-1. The user must have valid registration data.
-2. The application must be available and functional.
+#### **Preconditions:**  
+1. The mobile application must be installed and operational.  
+2. The user is not already registered on the application.  
+3. Test data should include a valid and unused email, username, and password.
 
 #### **Test Steps:**
 
-1. **Action**: Open the mobile application.  
-   - **Expected Result**: The application opens successfully, and the registration page appears.  
-   - **Actual Result**: 
+1. **Action**: Launch the mobile application.  
+   - **Expected Result**: The main screen of the mobile application is displayed, and the option to register a new account is available.  
+   - **Actual Result**: [Leave blank for completion after test execution]
 
-2. **Action**: Enter valid registration data into the corresponding fields (full name, email, password, confirmation password).  
-   - **Expected Result**: The data is successfully entered in all fields. 
-   - **Actual Result**: 
+2. **Action**: Tap on the "Sign Up" or “Register” option.  
+   - **Expected Result**:  Registration form appears.  
+   - **Actual Result**: [Leave blank for completion after test execution]
 
-3. **Action**: Click on the "Sign Up" button.  
-   - **Expected Result**: A verification email is sent to the entered email address. 
-   - **Actual Result**: 
+3. **Action**: Enter valid and unused email, username, and password in the respective fields.  
+   - **Expected Result**: The 'Sign Up' or 'Register' button becomes active.  
+   - **Actual Result**: [Leave blank for completion after test execution]
 
-4. **Action**: Check the verification email and click on the verification link. 
-   - **Expected Result**: The email is successfully opened and the link redirects to the mobile application confirming the successful registration.  
-   - **Actual Result**: 
+4. **Action**: Tap on the 'Sign Up' or 'Register' button.  
+   - **Expected Result**: A successful registration message is displayed and the user is redirected to the login page.  
+   - **Actual Result**: [Leave blank for completion after test execution]
 
 #### **Expected Results:**
-The user is successfully registered into the system after entering valid data.
+User should be successfully registered and redirected to the login page with a display message indicating successful registration.
 
 #### **Actual Results:**
+[Leave blank to be completed after test execution]  
 
 #### **Pass/Fail:**
+[Leave blank to be completed after test execution]  
+
+#### **Estimated Execution Time:**
+5 minutes
 
 #### **Screenshots/Attachments:**
-1. Screenshot of the registration page before entering data.
-2. Screenshot of filled registration page.
-3. Screenshot of the verification email.
-4. Screenshot of successful registration confirmation.
+1. Screenshot of the registration page.
+2. Screenshot of the successful registration message.
 
 #### **Notes/Comments:**
+If registration fails due to network issues, retry the test or check input data validity.

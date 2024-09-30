@@ -2,7 +2,7 @@ import json
 import logging
 import os
 
-def load_config(config_path="config\\config.json") -> dict:
+def load_config(config_path="config/config.json") -> dict:
     """
     Loads the configuration from the specified config.json file.
 

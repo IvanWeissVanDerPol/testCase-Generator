@@ -21,7 +21,7 @@
     "TEST_CASE_PATH": "resulting_docs/test_cases",
     "PROJECT_DATA_FOLDER": "resulting_docs/general_qa_docs",
     "LOG_DIR": "logs",
-    "CONVERSATION_HISTORY_FILE": "conversation_history.json"
+    "CONVERSATION_HISTORY_FILE": "resulting_docs/general_qa_docs/conversation_history.json"
   },
   "LOGGING": {
     "LOG_FILE": "suite_case_generation.log",

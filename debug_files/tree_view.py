@@ -47,6 +47,7 @@ if __name__ == "__main__":
     # List of directories to exclude (including __pycache__)
     exclude = [
         os.path.join(root_directory, '.venv'),        # Exclude .venv folder
+        os.path.join(root_directory, '.git'),   # Exclude __pycache__ folder
         os.path.join(root_directory, '__pycache__')   # Exclude __pycache__ folder
     ]
     

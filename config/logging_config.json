@@ -1,47 +1,46 @@
 {
-    "version": 1,
-    "handlers": {
-      "file": {
-        "class": "logging.handlers.RotatingFileHandler",
-        "filename": "logs/suite_case_generation.log",
-        "maxBytes": 10485760,  
-        "backupCount": 5, 
-        "level": "DEBUG",
-        "formatter": "detailed"
-      }
+  "version": 1,
+  "handlers": {
+    "file": {
+      "class": "logging.handlers.RotatingFileHandler",
+      "filename": "logs/suite_case_generation.log",
+      "maxBytes": 10485760,
+      "backupCount": 5,
+      "level": "DEBUG",
+      "formatter": "detailed"
+    }
+  },
+  "formatters": {
+    "detailed": {
+      "format": "%(asctime)s %(name)s %(module)s %(levelname)s: %(message)s"
+    }
+  },
+  "loggers": {
+    "": {
+      "handlers": ["file"],
+      "level": "DEBUG",
+      "propagate": true
     },
-    "formatters": {
-      "detailed": {
-        "format": "%(asctime)s %(name)s %(module)s %(levelname)s: %(message)s"
-      }
+    "api": {
+      "handlers": ["file"],
+      "level": "DEBUG",
+      "propagate": false
     },
-    "loggers": {
-      "": {
-        "handlers": ["file"],
-        "level": "DEBUG",
-        "propagate": true
-      },
-      "api": {
-        "handlers": ["file"],
-        "level": "DEBUG",
-        "propagate": false
-      },
-      "main": {
-        "handlers": ["file"],
-        "level": "DEBUG",
-        "propagate": false
-      },
-      "utils": {
-        "handlers": ["file"],
-        "level": "DEBUG",
-        "propagate": false
-      },
-      "documentation": {
-        "handlers": ["file"],
-        "level": "DEBUG",
-        "propagate": false
-      }
+    "main": {
+      "handlers": ["file"],
+      "level": "DEBUG",
+      "propagate": false
     },
-    "disable_existing_loggers": false
-  }
-  
+    "utils": {
+      "handlers": ["file"],
+      "level": "DEBUG",
+      "propagate": false
+    },
+    "documentation": {
+      "handlers": ["file"],
+      "level": "DEBUG",
+      "propagate": false
+    }
+  },
+  "disable_existing_loggers": false
+}

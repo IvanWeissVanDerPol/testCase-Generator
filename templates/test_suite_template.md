@@ -1,99 +1,61 @@
 ### **Test Suite Template: [Application Name]**
 
-#### **Test Suite Name:**
-[Name of the test suite]  
-*Example*: `Functional Test Suite`
+#### **Test Suite ID:**
+`TS_[Module]_[Type]_[Number]`  
+*Example*: `TS_AUTH_REG_001`
 
-#### **Test Suite Description:**
-[Brief description of the test suite]  
-*Example*: `This test suite includes a collection of test cases designed to validate the core functionalities of [Application Name], ensuring that major features such as user management, transaction processing, and notifications work as expected.`
+#### **Priority:**
+High/Medium/Low
 
-#### **Test Suite Objective:**
-[State the objective]  
-*Example*: `The objective of this test suite is to ensure that critical functionalities in [Application Name] meet the specified requirements before moving to advanced testing phases.`
-
-#### **Scope:**
-[Outline features/modules covered]  
-*Example*:  
-- **Web App**: User registration, login, profile updates, transaction processing.  
-- **Mobile App**: Push notifications, biometric login, transaction history.  
-- **Common Features**: Synchronization between web and mobile sessions, data consistency.
-
-#### **Test Cases Included:**
-
-| **Test Case ID** | **Description**                                   | **Priority** | **Status**       |
-|------------------|---------------------------------------------------|--------------|------------------|
-| TC_WEB_FUNC_001  | Verify successful login with valid credentials    | High         | Not executed     |
-| TC_APP_FUNC_002  | Validate push notification functionality          | High         | Not executed     |
-| TC_WEB_FUNC_003  | Verify transaction processing flow                | Medium       | In progress      |
-| TC_APP_FUNC_004  | Test biometric login functionality on mobile      | Medium       | Not executed     |
-
-#### **Prerequisites:**
-[Prerequisites to be met before test execution]  
-*Example*:  
-1. Users must have valid test accounts in both the web and mobile applications.  
-2. The application must be accessible in the staging environment.  
-3. Required test data such as transaction details, test credit cards, or mock user data must be available.  
-4. Devices must be set up with biometric capabilities enabled (if applicable).
+#### **Type:**
+Functional/Regression/Smoke/Performance
 
 #### **Test Environment:**
-[Details of the test environment used for execution]  
+iOS/Android/Web
+
+#### **Test Suite Title:**
+[Brief title of the test suite]  
+*Example*: `User Authentication Test Suite`
+
+#### **Description:**
+[A description of the test suite, summarizing the goal of the suite]  
+*Example*: `This test suite verifies the user authentication functionality in the mobile application, covering login, registration, and password recovery.`
+
+#### **Test Case Summary:**
+
+| Test Case ID     | Description                                     | Priority |
+|------------------|-------------------------------------------------|----------|
+| `TC_AUTH_SMK_001` | Verify successful login with valid credentials  | High     |
+| `TC_AUTH_NEG_002` | Verify login fails with invalid credentials     | Medium   |
+| `TC_AUTH_REG_003` | Verify registration with valid data             | High     |
+| `TC_AUTH_REG_004` | Verify registration fails with duplicate email  | Medium   |
+
+*[Add all test cases in the suite]*
+
+#### **Dependencies:**
+[List any dependencies between test cases]  
 *Example*:  
-- **Environment**: Staging  
-- **Web Browsers**: Chrome (latest), Safari (latest), Firefox (latest)  
-- **Devices**: iPhone 13 (iOS 15), Google Pixel 6 (Android 12)  
-- **Operating Systems**: Windows 11, macOS Monterey  
-- **Database**: MySQL (v8.x)  
-- **Network**: Stable internet connection (Wi-Fi 50Mbps)
+1. `TC_AUTH_SMK_001` must be executed before `TC_AUTH_NEG_002`.
 
-#### **Execution Steps:**
-1. Set up and verify the availability of the staging environment.
-2. Ensure that all test accounts and test data are correctly configured.
-3. Execute the test cases listed above, following the steps outlined in each test case.
-4. Log any defects encountered during testing into the defect management tool.
-5. Record the results of each test case in the **Test Results** section below.
-
-#### **Pass/Fail Criteria:**
-[Define clear pass/fail criteria for the test suite]  
+#### **Test Execution Schedule:**
+[Outline the schedule for executing the test suite]  
 *Example*:  
-- **Pass**: All critical/high-priority test cases must pass without any major defects, and medium-priority cases can have minor issues if they do not impact core functionality.  
-- **Fail**: Any failure of a high-priority test case or the presence of a critical defect will result in the failure of the test suite.
+`Day 1`: Execute smoke tests  
+`Day 2`: Execute negative tests and edge cases.
 
-#### **Test Results:**
+#### **Expected Results:**
+[Overall expected outcome from executing the test suite]  
+*Example*: `All tests in the suite should pass with no defects related to the core authentication functionality.`
 
-| **Test Case ID**  | **Result**  | **Defect ID** | **Notes**                               |
-|-------------------|-------------|--------------|-----------------------------------------|
-| TC_WEB_FUNC_001   | Pass        | N/A          | Login functionality verified            |
-| TC_APP_FUNC_002   | Fail        | DEF_002      | Notification delays on Android devices  |
-| TC_WEB_FUNC_003   | Pass        | N/A          | Transaction flow completed successfully |
-| TC_APP_FUNC_004   | Pending     | N/A          | Test not yet executed                   |
+#### **Actual Results:**
+[Leave blank to be completed after execution]
 
-#### **Test Dependencies:**
-[Outline any dependencies that may impact the test suite’s execution]  
-*Example*:  
-- Dependency on third-party payment gateways for transaction processing tests.  
-- Integration with external notification services for mobile notifications.  
-- Availability of biometric devices for testing login functionality on mobile apps.
+#### **Pass/Fail:**
+[Leave blank to be completed after execution]
 
-#### **Tested By:**
-[Name of the tester executing the suite]  
-*Example*: `Jane Doe`
+#### **Screenshots/Attachments:**
+[List of screenshots or logs collected during execution of the suite]
 
-#### **Date of Execution:**
-[Date when the test suite was executed]  
-*Example*: `2024-09-16`
-
-#### **Defect Tracking:**
-[Provide a summary of how defects are tracked and managed]  
-*Example*: Defects found during testing are logged in **JIRA**, categorized by severity, and assigned to relevant team members for resolution.
-
-#### **Test Metrics:**
-[Metrics that track the success or failure of the suite]  
-*Example*:  
-- **Test Case Execution Rate**: % of executed test cases vs. planned cases.  
-- **Pass Rate**: % of test cases that passed.  
-- **Defect Density**: Number of defects found per module or feature.
-
-#### **Conclusion:**
-[Final assessment after test execution]  
-*Example*: The **Functional Test Suite** for [Application Name] achieved a pass rate of 85%. Some defects were logged related to notification delays, which will be addressed in the next sprint. Overall, the core functionality is stable.
+#### **Notes/Comments:**
+[Additional comments or observations related to the test suite]  
+*Example*: `If defects are found in login functionality, prioritize resolving them before continuing with registration tests.`
